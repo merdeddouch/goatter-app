@@ -1,0 +1,7 @@
+.sideBar{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
