@@ -1,6 +1,7 @@
 import { Grid } from '@mui/material';
 import './App.css';
 import Slidebar from './Components/Slidbar/Sidebar';
+import Main from './Components/Main/Main';
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
     </Slidebar>
     </Grid>
         {/*main*/}
+    <Grid item md={6}> 
+        <Main></Main>
+    </Grid>
         {/*widgets*/}
       
     </Grid>

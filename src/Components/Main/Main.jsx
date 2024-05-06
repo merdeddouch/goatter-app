@@ -3,8 +3,8 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <Box>
-            this is the main page
+    <Box height={"100vh"}> 
+      
     </Box>
   )
 }
