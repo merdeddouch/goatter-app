@@ -1,5 +1,4 @@
-
-import { Box, Button } from '@mui/material'
+import { Button } from '@mui/material'
 import React from 'react'
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SearchIcon from '@mui/icons-material/Search';
@@ -12,7 +11,7 @@ import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import ListIcon from '@mui/icons-material/List';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import "./SlidebarOption"
+import "./SidebarOption.css"
 const SlidebarOption_v2 = ({option,id,handlClick,activeButton}) => {
   let IconComponent;
 

@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import './App.css';
-import Slidebar from './Components/Slidbar/Slidebar';
+import Slidebar from './Components/Slidbar/Sidebar';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
     </Grid>
         {/*main*/}
         {/*widgets*/}
+      
     </Grid>
   );
 }

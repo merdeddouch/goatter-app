@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import {Box, IconButton, Stack} from "@mui/material";
+import {Box, Button, IconButton, Stack} from "@mui/material";
 import TwitterIcon from '@mui/icons-material/Twitter';
-import SlidebarOption_v2 from '../SlidebarOption/SlidebarOption_v2';
+import SlidebarOption_v2 from '../SidebarOption/SidebarOption_v2';
 import '../../helper/options'
 import { options } from '../../helper/options';
 function Slidebar(props) {
@@ -15,7 +15,7 @@ function Slidebar(props) {
 
     return (
         <Stack spacing={2} justifyContent={"center"} alignItems={"start"}>
-            <Box mb={3}>
+            <Box >
             <IconButton size='large' color='primary'>
                 <TwitterIcon></TwitterIcon>
             </IconButton>
@@ -28,6 +28,16 @@ function Slidebar(props) {
                     </SlidebarOption_v2>
                 })
             }
+
+            <Button size='large' variant='contained'
+                sx={{
+                    borderRadius:"25px",
+                    width:"11em",
+                    backgroundColor:"#1DA1F0"
+                }}
+            >
+                POST
+            </Button>
             {/*slideBarOptions*/}
             {/*MainButtonToAddNewGoat_thread*/}
         </Stack>
