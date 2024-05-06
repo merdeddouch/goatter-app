@@ -5,11 +5,11 @@ import Slidebar from './Components/Slidbar/Slidebar';
 function App() {
   return (
     <Grid container  className="App">
-      <Grid item md={3}>
+      <Grid item m={3} md={3}>
     {/*  slide bar  */}
     <Slidebar>
     </Slidebar>
-      </Grid>
+    </Grid>
         {/*main*/}
         {/*widgets*/}
     </Grid>
