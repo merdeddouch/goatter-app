@@ -1,44 +1,18 @@
-import React from 'react';
-import {Box, Grid, IconButton, Stack} from "@mui/material";
+import React, { useState } from 'react';
+import {Box, IconButton, Stack} from "@mui/material";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import SlidebarOption_v2 from '../SlidebarOption/SlidebarOption_v2';
+import '../../helper/options'
+import { options } from '../../helper/options';
 function Slidebar(props) {
-    const options = [
-        {name:"Home",
-        icon:"HomeIcon"
-        },
-        
-        {name:"Notofications",
-        icon:"NotificationsNoneIcon"
-        },
-        
-        {name:"Explore",
-        icon:"SearchIcon"
-        },
-        
-        {name:"Messages",
-        icon:"MailOutlineIcon"
-        },
-        {name:"Lists",
-        icon:"ListIcon"
-        },
-        {name:"Bookmarks",
-        icon:"TurnedInNotIcon"
-        },
-        {name:"Communities",
-        icon:"PeopleAltIcon"
-        },
-        {name:"Premuim",
-        icon:"WorkspacePremiumIcon"
-        },
-        {name:"Profil",
-        icon:"PersonOutlineIcon"
-        },
-        
-        {name:"more",
-        icon:"MoreHorizIcon"
-        }
-    ]
+
+    const [activeButton,setActiveButton] = useState(0);
+    const handlClick = (e) => {
+        //to check console.log(e.target.id);
+        const currentActive = e.target.id
+        setActiveButton(currentActive);
+    }
+
     return (
         <Stack spacing={2} justifyContent={"center"} alignItems={"start"}>
             <Box mb={3}>
@@ -49,8 +23,8 @@ function Slidebar(props) {
             
             {/*slideBarOptions*/}
             {
-                options.map((op,key) => {
-                    return <SlidebarOption_v2 option={op} key={key}>
+                options.map((op,index) => {
+                    return <SlidebarOption_v2 handlClick={handlClick} activeButton={activeButton} option={op} key={index} id={index}>
                     </SlidebarOption_v2>
                 })
             }

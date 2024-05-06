@@ -12,8 +12,8 @@ import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import ListIcon from '@mui/icons-material/List';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-
-const SlidebarOption_v2 = ({option,key}) => {
+import "./SlidebarOption"
+const SlidebarOption_v2 = ({option,id,handlClick,activeButton}) => {
   let IconComponent;
 
   // Determine which icon component to use based on the option
@@ -47,6 +47,7 @@ const SlidebarOption_v2 = ({option,key}) => {
     break;
     case 'ListIcon':
       IconComponent = ListIcon;
+      break;
     case 'MoreHorizIcon':
         IconComponent = MoreHorizIcon;
     break;      
@@ -55,14 +56,17 @@ const SlidebarOption_v2 = ({option,key}) => {
       IconComponent = HomeIcon;
   }
   return (
-      <Button key={key} size='medium' variant='text' 
+      <Button onClick={handlClick} id={id} key={id} size='medium' variant='text'
       sx={{
         borderRadius:"25px",
         color:"black",
         '&:hover':{
           backgroundColor:"#E8F5FD",
-          color:"#1DA1F2"
-      }
+          color:"#1DA1F2",
+      },
+      ...((activeButton == id) && {
+        color: "#1DA1F2",
+    })
       }}
       startIcon={<IconComponent size="medium" ></IconComponent>}
       >
