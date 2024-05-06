@@ -6,13 +6,13 @@ import Main from './Components/Main/Main';
 function App() {
   return (
     <Grid container  className="App">
-      <Grid item m={3} md={2} sx={{ borderRight: '2px solid #E1E8ED', paddingLeft: '10px', width:"400px" }}>
+      <Grid item sx={{ borderRight: '2px solid #E1E8ED', paddingRight: '10px', minWidth:"250px" }}>
     {/*  slide bar  */}
     <Slidebar>
     </Slidebar>
     </Grid>
         {/*main*/}
-    <Grid item md={6}> 
+    <Grid item md={5} >
         <Main></Main>
     </Grid>
         {/*widgets*/}

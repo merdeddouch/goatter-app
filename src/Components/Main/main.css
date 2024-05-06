@@ -1,0 +1,5 @@
+.main{
+    display: flex;
+    overflow-y: scroll;
+    min-width: fit-content;
+}

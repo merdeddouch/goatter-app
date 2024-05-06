@@ -2,7 +2,7 @@ export  const options = [
     {name:"Home",
     icon:"HomeIcon"
     },
-    {name:"Notofications",
+    {name:"Notifications",
     icon:"NotificationsNoneIcon"
     },
     {name:"Explore",
