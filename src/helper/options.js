@@ -1,0 +1,32 @@
+export  const options = [
+    {name:"Home",
+    icon:"HomeIcon"
+    },
+    {name:"Notofications",
+    icon:"NotificationsNoneIcon"
+    },
+    {name:"Explore",
+    icon:"SearchIcon"
+    },
+    {name:"Messages",
+    icon:"MailOutlineIcon"
+    },
+    {name:"Lists",
+    icon:"ListIcon"
+    },
+    {name:"Bookmarks",
+    icon:"TurnedInNotIcon"
+    },
+    {name:"Communities",
+    icon:"PeopleAltIcon"
+    },
+    {name:"Premuim",
+    icon:"WorkspacePremiumIcon"
+    },
+    {name:"Profil",
+    icon:"PersonOutlineIcon"
+    },    
+    {name:"more",
+    icon:"MoreHorizIcon"
+    }
+]
