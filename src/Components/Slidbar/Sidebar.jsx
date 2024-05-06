@@ -4,8 +4,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import SlidebarOption_v2 from '../SidebarOption/SidebarOption_v2';
 import '../../helper/options'
 import { options } from '../../helper/options';
+import './SlidebarStyle.css'
 function Slidebar(props) {
-
     const [activeButton,setActiveButton] = useState(0);
     const handlClick = (e) => {
         //to check console.log(e.target.id);
@@ -14,8 +14,8 @@ function Slidebar(props) {
     }
 
     return (
-        <Stack spacing={2} justifyContent={"center"} alignItems={"start"}>
-            <Box >
+        <div className='sideBar'>
+          <Box >
             <IconButton id={0} size='large' color='primary' onClick={handlClick}>
                 <TwitterIcon></TwitterIcon>
             </IconButton>
@@ -29,18 +29,17 @@ function Slidebar(props) {
                 })
             }
 
-            <Button size='large' variant='contained'
+            <Button size='medium' variant='contained'
                 sx={{
                     borderRadius:"25px",
-                    width:"11em",
+                    width:"11rem",
                     backgroundColor:"#1DA1F0"
                 }}
             >
                 POST
             </Button>
-            {/*slideBarOptions*/}
-            {/*MainButtonToAddNewGoat_thread*/}
-        </Stack>
+        </div>
+          
     );
 }
 
