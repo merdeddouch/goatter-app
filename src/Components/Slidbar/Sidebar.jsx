@@ -16,7 +16,7 @@ function Slidebar(props) {
     return (
         <Stack spacing={2} justifyContent={"center"} alignItems={"start"}>
             <Box >
-            <IconButton size='large' color='primary'>
+            <IconButton id={0} size='large' color='primary' onClick={handlClick}>
                 <TwitterIcon></TwitterIcon>
             </IconButton>
             </Box>
