@@ -10,9 +10,14 @@ const Post = () => {
     <Stack direction={'row'}>
         <Box display={"flex"} gap={2} alignItems={"center"}>
             <PostProfil></PostProfil>
-            <Typography variant='caption'>
+            <div>
+            <Typography className='Name' variant='subtitle1'>
+                Monkey De LOFI
+            </Typography>
+            <Typography className='userName' >
                 @lofi
             </Typography>
+            </div>
         </Box>
         </Stack>       
     </CardContent>
