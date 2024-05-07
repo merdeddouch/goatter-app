@@ -20,6 +20,7 @@ const Header = () => {
         backgroundColor:"white",
         position:'sticky',
         top:0,
+        zIndex: 1000, 
     }}
     justifyContent={"center"}>
     <ButtonGroup fullWidth>
