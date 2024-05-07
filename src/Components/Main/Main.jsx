@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <>
     <div className='main'> 
-    <Header className="header"></Header>
+    <Header ></Header>
     <Post></Post>
     <Post></Post>
     <Post></Post>
@@ -21,7 +21,6 @@ const Main = () => {
     <Post></Post>
     <Post></Post>
     </div>
-    <Post></Post>
     </>
   )
 }

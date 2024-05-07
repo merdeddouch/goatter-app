@@ -1,13 +1,21 @@
 import React from 'react'
 import './postStyle.css'
-import { Card, CardActions, CardContent, CardHeader, CardMedia } from '@mui/material'
+import { Box, Card, CardActions, CardContent, CardHeader, CardMedia, Stack, Typography } from '@mui/material'
+import PostProfil from './PostProfil/PostProfil'
 const Post = () => {
   return (
 <div>
     <Card>
     <CardContent>
-            am a card Content
-        </CardContent>
+    <Stack direction={'row'}>
+        <Box display={"flex"} gap={2} alignItems={"center"}>
+            <PostProfil></PostProfil>
+            <Typography variant='caption'>
+                @lofi
+            </Typography>
+        </Box>
+        </Stack>       
+    </CardContent>
         <CardMedia>
             am a card media
         </CardMedia>
