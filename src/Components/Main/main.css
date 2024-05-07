@@ -1,5 +1,8 @@
 .main{
-    display: flex;
+    flex: 0.5;
     overflow-y: scroll;
     min-width: fit-content;
+    border-right: 2px solid #E1E8ED;
+    height: 100vh;
 }
+

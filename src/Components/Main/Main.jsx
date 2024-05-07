@@ -5,8 +5,55 @@ import "./main.css"
 const Main = () => {
   return (
     <>
-    <Header></Header>
-    <div className='main' height={"100vh"}> 
+    <div className='main'> 
+    <Header className="header"></Header>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
+    <h1>hi</h1>
     </div>
     </>
   )

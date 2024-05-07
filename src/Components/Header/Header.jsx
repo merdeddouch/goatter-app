@@ -16,6 +16,10 @@ const Header = () => {
     sx={{
         borderBottom: '2px solid #E1E8ED',
         borderRight: '2px solid #E1E8ED',
+        opacity:"90%",
+        backgroundColor:"white",
+        position:'sticky',
+        top:0,
     }}
     justifyContent={"center"}>
     <ButtonGroup fullWidth>
