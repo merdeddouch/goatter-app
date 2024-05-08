@@ -1,4 +1,4 @@
-import { Button } from '@mui/material'
+import { Button, IconButton } from '@mui/material'
 import React from 'react'
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SearchIcon from '@mui/icons-material/Search';
@@ -12,7 +12,7 @@ import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import ListIcon from '@mui/icons-material/List';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import "./SidebarOption.css"
-const SlidebarOption_v2 = ({option,id,handlClick,activeButton}) => {
+const SlidebarOption_v2 = ({option,id,handlClick,activeButton,isSlimSidebar}) => {
   let IconComponent;
 
   // Determine which icon component to use based on the option
@@ -55,7 +55,9 @@ const SlidebarOption_v2 = ({option,id,handlClick,activeButton}) => {
       IconComponent = HomeIcon;
   }
   return (
-      <Button onClick={handlClick} id={id} key={id} size='medium' variant='text'
+    (isSlimSidebar) ? 
+      <IconButton onClick={handlClick} id={id} key={id} 
+      size='large' color='primary'
       sx={{
         borderRadius:"25px",
         color:"black",
@@ -65,11 +67,30 @@ const SlidebarOption_v2 = ({option,id,handlClick,activeButton}) => {
       },
       ...((activeButton == id) && {
         color: "#1DA1F2",
+        backgroundColor:"#E8F5FD",
+        fontWeight:"800",
+    })}}
+      >
+<IconComponent></IconComponent>
+      </IconButton>
+    :
+      <Button onClick={handlClick} id={id} key={id} size='large' variant='text'
+      sx={{
+        borderRadius:"25px",
+        color:"black",
+        '&:hover':{
+          backgroundColor:"#E8F5FD",
+          color:"#1DA1F2",
+      },
+      ...((activeButton == id) && {
+        color: "#1DA1F2",
+        backgroundColor:"#E8F5FD",
+        fontWeight:"800",
     })
       }}
-      startIcon={<IconComponent size="medium" ></IconComponent>}
+      startIcon={<IconComponent></IconComponent>}
       >
-        {option.name}
+      {option.name}
       </Button>
   )
 }
