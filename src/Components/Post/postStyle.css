@@ -14,3 +14,17 @@
     align-items: center !important;
     justify-content: center !important;
 }
+
+.cardImg{
+  padding: 20px;
+}
+
+.container_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nbrOfinteraction{
+    color: #1DA1F2;
+    font-size: small;
+}
