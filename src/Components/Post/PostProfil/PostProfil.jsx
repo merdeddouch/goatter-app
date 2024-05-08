@@ -6,7 +6,7 @@ const PostProfil = () => {
     <Avatar
       sx={{ width: 35, height: 35 }}
       alt="Lofi"
-      src={"/assets/static/images/lofi.jpg"}
+      src={"/assets/static/images/naruto.jpg"}
     />
   );
 }
