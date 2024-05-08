@@ -6,7 +6,7 @@ import Main from './Components/Main/Main';
 function App() {
   return (
     <Grid container  className="App">
-      <Grid item sx={{ borderRight: '2px solid #E1E8ED', paddingRight: '10px', minWidth:"250px" }}>
+      <Grid item md={2} sx={{ borderRight: '2px solid #E1E8ED', paddingRight: '10px',}}>
     {/*  slide bar  */}
     <Slidebar>
     </Slidebar>
