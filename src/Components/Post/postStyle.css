@@ -1,4 +1,16 @@
 .userName{
-    font-size:12px !important;
-    color: #cec9c9;
+    font-size:14px  !important;
+    color: #cec9c9 !important;
+}
+
+.name{
+    font-size:18px  !important;
+    font-weight: bold !important;
+}
+
+.post_header_info{
+    display: flex !important;
+    gap: 12px !important;
+    align-items: center !important;
+    justify-content: center !important;
 }

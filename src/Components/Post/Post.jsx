@@ -10,13 +10,13 @@ const Post = () => {
     <Stack direction={'row'}>
         <Box display={"flex"} gap={2} alignItems={"center"}>
             <PostProfil></PostProfil>
-            <div>
-            <Typography className='Name' variant='subtitle1'>
-                Monkey De LOFI
+            <div className="post_header_info">
+            <Typography className='name' variant='subtitle1'>
+                Monkey Dee Loofi
             </Typography>
-            <Typography className='userName' >
+            <p className='userName' >
                 @lofi
-            </Typography>
+            </p>
             </div>
         </Box>
         </Stack>       
