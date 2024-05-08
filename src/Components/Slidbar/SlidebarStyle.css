@@ -12,8 +12,14 @@
     height: fit-content !important;
 }
 
-/*
-@media screen and (max-width: 1300px) {
-    .tweetButton{
+
+.slimSideBar{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    width: max-content;
+    align-items: center;
+    justify-content: end;
+    margin-left: auto;
 }
-    }*/
+
