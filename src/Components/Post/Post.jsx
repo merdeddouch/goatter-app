@@ -3,6 +3,7 @@ import './postStyle.css'
 import { Box, Card, CardActions, CardContent, CardHeader, CardMedia, Stack, Typography,IconButton } from '@mui/material'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import PostProfil from './PostProfil/PostProfil'
+import GroupButton from '../GroupButton/GroupButton';
 const Post = () => {
   return (
 <div>
@@ -29,14 +30,23 @@ const Post = () => {
         </IconButton>
         </Stack>       
     </CardContent>
-        <CardMedia>
-            am a card media
-        </CardMedia>
         <CardContent>
-            am a card Content
+            <Typography variant='h5'>hiii wspfjh ghfhg sdhjgs dhj  jfdsjhgfds jhfdsjhgfs  jhsfdhgd sdjhgfsdgfdsj
+            hkfgdshdsgf jhgdsf  hgdsf  gds  fdshg ghfds</Typography>
         </CardContent>
+        <div className='cardImg'>
+        <CardMedia component="img" 
+        image="assets/static/images/lofi.jpg"
+        alt="lofi" 
+        
+        sx={{
+            borderRadius:"18px",
+            height:"400px",
+        }}
+        />
+        </div>
         <CardActions>
-            am a card actions
+        <GroupButton></GroupButton>
         </CardActions>
     </Card>
 </div>
