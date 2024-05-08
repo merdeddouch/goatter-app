@@ -3,6 +3,7 @@ import { Box, Button, IconButton } from "@mui/material";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import SlidebarOption_v2 from '../SidebarOption/SidebarOption_v2';
 import { options } from '../../helper/options';
+import HistoryEduOutlinedIcon from '@mui/icons-material/HistoryEduOutlined';
 import './SlidebarStyle.css';
 
 function Slidebar(props) {
@@ -44,10 +45,19 @@ function Slidebar(props) {
                     option={op}
                     key={index}
                     id={index}
+                    isSlimSidebar={isSlimSidebar}
                 />
             ))}
 
-            <Button
+            {(isSlimSidebar) ? <IconButton color='primary'> 
+                <HistoryEduOutlinedIcon  sx={{
+                    height:"30px",
+                    width:"30px",
+                    padding:"5px",
+                    borderRadius:'50%',
+                }} >
+                </HistoryEduOutlinedIcon>
+            </IconButton> : <Button
                 className={"tweetButton"}
                 variant='contained'
                 sx={{
@@ -57,7 +67,8 @@ function Slidebar(props) {
                 }}
             >
                 POST
-            </Button>
+            </Button>}
+            
         </div>
     );
 }
