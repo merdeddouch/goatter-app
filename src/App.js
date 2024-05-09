@@ -2,6 +2,7 @@ import { Grid } from '@mui/material';
 import './App.css';
 import Slidebar from './Components/Slidbar/Sidebar';
 import Main from './Components/Main/Main';
+import Home from './Pages/HomePage';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
     </Grid>
         {/*main*/}
     <Grid item md={7} sx={{ flex:1,}} >
-        <Main></Main>
+        <Home></Home>
     </Grid>
         {/*widgets*/}
       
