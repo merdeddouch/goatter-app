@@ -13,7 +13,7 @@ function App() {
     </Slidebar>
     </Grid>
         {/*main*/}
-    <Grid item md={7} sx={{ flex:1,}} >
+    <Grid item md={6} sx={{ flex:1,}} >
         <Home></Home>
     </Grid>
         {/*widgets*/}
