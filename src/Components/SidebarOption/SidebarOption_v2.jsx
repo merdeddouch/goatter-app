@@ -71,7 +71,7 @@ const SlidebarOption_v2 = ({option,id,handlClick,activeButton,isSlimSidebar}) =>
         fontWeight:"800",
     })}}
       >
-<IconComponent></IconComponent>
+<IconComponent id={id} ></IconComponent>
       </IconButton>
     :
       <Button onClick={handlClick} id={id} key={id} size='large' variant='text'
