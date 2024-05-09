@@ -1,5 +1,6 @@
 import React from 'react'
-import Header from '../Header/Header'
+import HomeHeader from '../Header/HomeHeader'
+import NotificationHeader from '../Header/NotificationHeader'
 import "./main.css"
 import Post from '../Post/Post'
 
@@ -7,7 +8,8 @@ const Main = () => {
   return (
     <>
     <div className='main'> 
-    <Header ></Header>
+    <NotificationHeader></NotificationHeader>
+    {/* <Header ></Header> */}
     <Post></Post>
     <Post></Post>
     <Post></Post>
