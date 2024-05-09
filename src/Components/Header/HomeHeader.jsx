@@ -2,16 +2,15 @@ import { Button, ButtonGroup, IconButton, Stack } from '@mui/material'
 import React, { useState } from 'react'
 import SettingsIcon from '@mui/icons-material/Settings';
 
-
-const Header = () => {
+const HomeHeader = () => {
     const [activeHomeButton,setActiveHomeButton] = useState("for_you");
     const handlClickHommeButton = (e) => {
         const currentHomeButtonActive = e.target.id;
        //lah ykhti 3lina console.log() console.log(currentHomeButtonActive)
         setActiveHomeButton(currentHomeButtonActive);
     }
+  return (
 
-    return (
     <Stack direction={"row"} 
     sx={{
         borderBottom: '2px solid #E1E8ED',
@@ -27,6 +26,8 @@ const Header = () => {
     <Button id='for_you' variant='text' 
     sx={{
         color:"#1DA1F0",
+        paddingY:"10px",
+        fontWeight:"700",
         ...(activeHomeButton === 'for_you') &&{
             position: 'relative',
             overflow: 'hidden',
@@ -50,6 +51,8 @@ const Header = () => {
       <Button id='following' variant='text'
       sx={{
         color:"#1DA1F0",
+        paddingY:"10px",
+        fontWeight:"700",
         ...(activeHomeButton === 'following' ) &&{
             position: 'relative',
             overflow: 'hidden',
@@ -81,4 +84,7 @@ const Header = () => {
   )
 }
 
-export default Header
+export default HomeHeader
+
+
+
