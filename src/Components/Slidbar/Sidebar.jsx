@@ -8,7 +8,7 @@ import './SlidebarStyle.css';
 
 function Slidebar(props) {
     const [activeButton, setActiveButton] = useState(0);
-    const [screenWidth, setScreenWidth] = useState();
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
     useEffect(() => {
         const handleResize = () => {
