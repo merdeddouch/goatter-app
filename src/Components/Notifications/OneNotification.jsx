@@ -8,17 +8,12 @@ import './oneNotificationStyle.css'
 const OneNotification = () => {
   return (
 <Stack direction={"row"} className='oneNotification'>
-    <div>
-    <LocalFireDepartmentIcon sx={{
-        height:"30px",
-        width:"30px",
-    }}>
+    <LocalFireDepartmentIcon className='logoOneoneNotification'>
     </LocalFireDepartmentIcon>
-    </div>
     <Stack direction={"column"} sx={{
-        width:"100%",
+        width:"100%", gap:'10px',
     }} >
-    <Stack direction={"row"} justifyContent={"space-between"}>
+    <Stack direction={"row"} justifyContent={"space-between"} >
         <PostProfil></PostProfil>
         <IconButton size='small' color='primary'>
             <MoreHorizOutlined>
@@ -29,10 +24,10 @@ const OneNotification = () => {
         <Typography variant='body1' gutterBottom>
             Recent post from <strong>Lofi</strong>
         </Typography>
-        <Typography variant='body2' color='sconedry'>
-            HCKJDSHFKJDSHKJGDSFJHG SDFKHDSFJHGJ GJHFDS
-            HFSDHKHJSFD KJHSDFLKJHDSF LSHDFKJHFDSKJHSDFKJH 
-            FDSLLSDHDSKJH JKHSDFKJHDSF FDS JHKSDFHKSDJFH KJSHFDKJHDSF
+        <Typography variant='body2' >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, inventore quae corrupti ut repellendus
+            doloribus veniam animi iure quaerat corporis perspiciatis alias consequuntur,
+            vero officia voluptatibus laborum, perferendis nihil recusandae.
         </Typography>
     </Stack>
     </Stack>
