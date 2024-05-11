@@ -9,9 +9,8 @@ const Main = () => {
   return (
     <>
     <div className='main'> 
-    <NotificationHeader></NotificationHeader>
-    {/* <Header ></Header> */}
-    {/* <Post></Post>
+    {/* <NotificationHeader></NotificationHeader> */}
+    <HomeHeader ></HomeHeader>
     <Post></Post>
     <Post></Post>
     <Post></Post>
@@ -22,8 +21,9 @@ const Main = () => {
     <Post></Post>
     <Post></Post>
     <Post></Post>
-    <Post></Post> */}
-    <ListNotifications></ListNotifications>
+    <Post></Post>
+    <Post></Post>
+    {/* <ListNotifications></ListNotifications> */}
     </div>
     </>
   )
