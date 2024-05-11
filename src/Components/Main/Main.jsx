@@ -4,13 +4,13 @@ import NotificationHeader from '../Header/NotificationHeader'
 import "./main.css"
 import Post from '../Post/Post'
 import ListNotifications from '../Notifications/ListNotifications'
-
+import AllNotificationPage from '../../Pages/AllNotificationPage'
+import VerifiedNotificationPage from '../../Pages/VerifiedNotificationPage'
 const Main = () => {
   return (
     <>
     <div className='main'> 
-    {/* <NotificationHeader></NotificationHeader> */}
-    <HomeHeader ></HomeHeader>
+    {/* <HomeHeader ></HomeHeader>
     <Post></Post>
     <Post></Post>
     <Post></Post>
@@ -22,8 +22,9 @@ const Main = () => {
     <Post></Post>
     <Post></Post>
     <Post></Post>
-    <Post></Post>
-    {/* <ListNotifications></ListNotifications> */}
+    <Post></Post> */}
+{/* <AllNotificationPage></AllNotificationPage> */}
+<VerifiedNotificationPage></VerifiedNotificationPage>
     </div>
     </>
   )
