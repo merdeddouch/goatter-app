@@ -4,7 +4,6 @@ import ListNotifications from '../Components/Notifications/ListNotifications'
 const AllNotificationPage = () => {
   return (
     <>
-      <NotificationHeader></NotificationHeader>
       <ListNotifications></ListNotifications> 
     </>
   )
