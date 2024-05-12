@@ -12,6 +12,7 @@ import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import ListIcon from '@mui/icons-material/List';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import "./SidebarOption.css"
+import { Link } from 'react-router-dom';
 const SlidebarOption_v2 = ({option,id,handlClick,activeButton,isSlimSidebar}) => {
   let IconComponent;
 
@@ -56,7 +57,7 @@ const SlidebarOption_v2 = ({option,id,handlClick,activeButton,isSlimSidebar}) =>
   }
   return (
     (isSlimSidebar) ? 
-      <IconButton onClick={handlClick} id={id} key={id} 
+      <IconButton component={Link} to={option.route} onClick={handlClick} id={id} key={id} 
       size='large' color='primary'
       sx={{
         borderRadius:"25px",
@@ -74,7 +75,7 @@ const SlidebarOption_v2 = ({option,id,handlClick,activeButton,isSlimSidebar}) =>
 <IconComponent id={id} ></IconComponent>
       </IconButton>
     :
-      <Button onClick={handlClick} id={id} key={id} size='large' variant='text'
+      <Button component={Link} to={option.route} onClick={handlClick} id={id} key={id} size='large' variant='text'
       sx={{
         borderRadius:"25px",
         color:"black",
@@ -82,7 +83,7 @@ const SlidebarOption_v2 = ({option,id,handlClick,activeButton,isSlimSidebar}) =>
           backgroundColor:"#E8F5FD",
           color:"#1DA1F2",
       },
-      ...((activeButton == id) && {
+      ...((activeButton ==id) && {
         color: "#1DA1F2",
         backgroundColor:"#E8F5FD",
         fontWeight:"800",

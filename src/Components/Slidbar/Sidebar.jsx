@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useContext } from 'react';
 import { Box, Button, IconButton } from "@mui/material";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import SlidebarOption_v2 from '../SidebarOption/SidebarOption_v2';
 import { options } from '../../helper/options';
 import HistoryEduOutlinedIcon from '@mui/icons-material/HistoryEduOutlined';
 import './SlidebarStyle.css';
+import { buttonBackToHomeContext } from '../../Context/buttonHomeContext';
+
 
 function Slidebar(props) {
-    const [activeButton, setActiveButton] = useState(0);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
+    const {activeButton,setActiveButton} = useContext(buttonBackToHomeContext)
     useEffect(() => {
         const handleResize = () => {
             setScreenWidth(window.innerWidth);
