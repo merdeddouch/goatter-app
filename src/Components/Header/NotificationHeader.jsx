@@ -2,7 +2,7 @@
 import { Button, ButtonGroup, IconButton, Stack, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import SettingsIcon from '@mui/icons-material/Settings';
-
+import { Link } from 'react-router-dom';
 const NotificationHeader = () => {
     const [activeHomeButton,setActiveHomeButton] = useState("All");
     const handlClickHommeButton = (e) => {
@@ -21,9 +21,9 @@ const NotificationHeader = () => {
         zIndex: 1000, 
     }}>
         <Stack direction={"row"}  justifyContent={"space-between"}>
-        <Button variant='text' sx={{
+        <Button component={Link} to={'/notifications/all_notification'} variant='text' sx={{
             backgroundColor:"white"
-        }}>
+        }} onClick={() => setActiveHomeButton('All')} >
             <Typography variant='h6'>
                 Notifications
             </Typography>
@@ -37,7 +37,7 @@ const NotificationHeader = () => {
     <Stack direction={"row"} 
     justifyContent={"center"}>
     <ButtonGroup fullWidth>
-    <Button id='All' variant='text' 
+    <Button component={Link} to={'/notifications/all_notification'} id='All' variant='text' 
     sx={{
         color:"#1DA1F0",
         paddingY:"10px",
@@ -62,7 +62,7 @@ const NotificationHeader = () => {
     >
     All
     </Button>
-      <Button id='Verified' variant='text'
+      <Button component={Link} to={'/notifications/verified_notification'} id='Verified' variant='text'
       sx={{
         color:"#1DA1F0",
         paddingY:"10px",
@@ -88,7 +88,7 @@ const NotificationHeader = () => {
       >
             Verified 
       </Button>
-      <Button id='Mentions' variant='text'
+      <Button component={Link} to={'/notifications/mentions_notification'} id='Mentions' variant='text'
       sx={{
         color:"#1DA1F0",
         paddingY:"10px",
