@@ -1,32 +1,42 @@
 export  const options = [
     {name:"Home",
-    icon:"HomeIcon"
+    icon:"HomeIcon",
+    route:"/",
     },
     {name:"Notifications",
-    icon:"NotificationsNoneIcon"
+    icon:"NotificationsNoneIcon",
+    route:"notifications",
     },
     {name:"Explore",
-    icon:"SearchIcon"
+    icon:"SearchIcon",
+    route:"explore",
     },
     {name:"Messages",
-    icon:"MailOutlineIcon"
+    icon:"MailOutlineIcon",
+    route:"messages",
     },
     {name:"Lists",
-    icon:"ListIcon"
+    icon:"ListIcon",
+    route:"lists",
     },
     {name:"Bookmarks",
-    icon:"TurnedInNotIcon"
+    icon:"TurnedInNotIcon",
+    route:"bookMark",
     },
     {name:"Communities",
-    icon:"PeopleAltIcon"
+    icon:"PeopleAltIcon",
+    route:"communities",
     },
     {name:"Premuim",
-    icon:"WorkspacePremiumIcon"
+    icon:"WorkspacePremiumIcon",
+    route:"permuim",
     },
     {name:"Profil",
-    icon:"PersonOutlineIcon"
+    icon:"PersonOutlineIcon",
+    route:"profil",
     },    
     {name:"more",
-    icon:"MoreHorizIcon"
+    icon:"MoreHorizIcon",
+    route:"more",
     }
 ]
