@@ -1,30 +1,18 @@
 import React from 'react'
-import HomeHeader from '../Header/HomeHeader'
-import NotificationHeader from '../Header/NotificationHeader'
 import "./main.css"
-import Post from '../Post/Post'
-import ListNotifications from '../Notifications/ListNotifications'
-import AllNotificationPage from '../../Pages/AllNotificationPage'
-import VerifiedNotificationPage from '../../Pages/VerifiedNotificationPage'
+import { Route, Routes } from 'react-router-dom'
+import NotifiacationPage from '../../Pages/NotifiacationPage'
+import HomePage from '../../Pages/HomePage'
+import NotFound from '../../Pages/NotFound'
 const Main = () => {
   return (
     <>
     <div className='main'> 
-    {/* <HomeHeader ></HomeHeader>
-    <Post></Post>
-    <Post></Post>
-    <Post></Post>
-    <Post></Post>
-    <Post></Post>
-    <Post></Post>
-    <Post></Post>
-    <Post></Post>
-    <Post></Post>
-    <Post></Post>
-    <Post></Post>
-    <Post></Post> */}
-{/* <AllNotificationPage></AllNotificationPage> */}
-<VerifiedNotificationPage></VerifiedNotificationPage>
+    <Routes>
+      <Route path='/*' element={<HomePage></HomePage>}></Route>
+      <Route path='/notifications/*' element={<NotifiacationPage></NotifiacationPage>}></Route>
+      <Route path='*' element={<NotFound></NotFound>}></Route>
+    </Routes>
     </div>
     </>
   )
