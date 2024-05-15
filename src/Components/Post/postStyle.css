@@ -28,3 +28,17 @@
     color: #1DA1F2;
     font-size: small;
 }
+
+.postFormContainer{
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px !important;
+    margin-left: 14px !important;
+    padding-top:20px !important;
+    padding-bottom: 15px !important;
+}
+
+.FormContainer{
+    width:100%;
+    margin-right: 24px !important;
+}
