@@ -5,7 +5,7 @@ import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import { MoreHorizOutlined } from '@mui/icons-material';
 import './oneNotificationStyle.css'
 
-const OneNotification = () => {
+const OneNotification = ({FromWho,content}) => {
   return (
 <Stack direction={"row"} className='oneNotification'>
     <LocalFireDepartmentIcon className='logoOneoneNotification'>
@@ -21,13 +21,13 @@ const OneNotification = () => {
         </IconButton>
     </Stack>
     <Stack direction={"column"}>
-        <Typography variant='body1' gutterBottom>
-            Recent post from <strong>Lofi</strong>
+        <Typography variant='body2' gutterBottom>
+            <span>Recent post from</span> <strong>Lofi</strong>
         </Typography>
-        <Typography variant='body2' >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, inventore quae corrupti ut repellendus
-            doloribus veniam animi iure quaerat corporis perspiciatis alias consequuntur,
-            vero officia voluptatibus laborum, perferendis nihil recusandae.
+        <Typography className='notification_Content' >
+            { ((content.length) >= 100) ? content.substring(0, 140) +'...':
+            content
+            }
         </Typography>
     </Stack>
     </Stack>
