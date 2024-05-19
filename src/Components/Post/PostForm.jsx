@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { FormControl, Stack, TextField, Button, IconButton } from '@mui/material';
-import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import PostProfil from './PostProfil/PostProfil';
 import ImageIcon from '@mui/icons-material/Image';
+import Picker from 'emoji-picker-react';
+import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
+import Circle from '../Cercle';
 const PostForm = () => {
   const [images, setImages] = useState([]);
+  const [textField, setTextField] = useState('');
+  const [showEmojiPicker, setShowEmojiPicker] = useState(false);
 
   const handleFileUpload = (event) => {
     const files = Array.from(event.target.files);
@@ -24,6 +28,16 @@ const PostForm = () => {
       .catch(error => console.error('Error uploading images:', error));
   };
 
+  const handleChange = (e) => {
+    setTextField(e.target.value);
+  };
+
+  const onEmojiClick = (event) => {
+    console.log(event.emoji)
+    setTextField(prevText => prevText + event.emoji);
+  };
+
+  const circumference = textField.length * 10;
   return (
     <div>
       <FormControl className="postFormContainer">
@@ -37,6 +51,8 @@ const PostForm = () => {
             multiline
             variant="standard"
             fullWidth
+            value={textField}
+            onChange={handleChange}
           />
           <Stack direction="row" flexWrap="wrap" mt={2}>
             {images?.map((image, index) => (
@@ -58,7 +74,17 @@ const PostForm = () => {
                 onChange={handleFileUpload}
               />
             </IconButton>
+
+            <IconButton color='primary' onClick={() => setShowEmojiPicker(val => !val)}>
+              <SentimentSatisfiedAltIcon color='primary' />
+            </IconButton>
+            {showEmojiPicker && (
+              <div style={{ position: 'absolute', zIndex: 1,top:"10vh" }}>
+                <Picker onEmojiClick={onEmojiClick} />
+              </div>
+            )}
           </Stack>
+          <Circle circumference={circumference} />
         </Stack>
       </FormControl>
     </div>
